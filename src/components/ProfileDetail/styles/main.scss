@@ -1,0 +1,48 @@
+@import "./dark-theme.scss";
+
+.profileDetail {
+  background: #ffffff;
+  width: 100%;
+  box-shadow: 0 0 10px 0 #ebebeb;
+  padding: 1rem 1.8rem;
+
+  h5 {
+    color: #009688;
+    font-size: 16px;
+  }
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.8rem;
+    color: #919191;
+    p {
+      color: #4a4a4a;
+    }
+  }
+  &__editing {
+    display: flex;
+    border-bottom: 2px solid #00bfa5;
+    padding-bottom: 0.5rem;
+    margin-top: 2rem;
+    color: #919191;
+    input {
+      flex: 1;
+      border: none;
+      outline: none;
+      font-size: 18px;
+      color: #4a4a4a;
+    }
+    &__icons {
+      display: flex;
+      p {
+        color: #bfbfbf;
+      }
+      &__icon {
+        height: 20px;
+        width: 20px;
+        margin-left: 0.5rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.dark-theme {
+  .focus-visible {
+    outline: 2px solid rgba(70, 108, 119, 0.3);
+  }
+
+  .header {
+    background: rgb(42, 47, 50);
+  }
+
+  .search-wrapper {
+    background: rgb(19, 28, 33);
+  }
+
+  .search {
+    background: rgb(50, 55, 57);
+  }
+
+  .search__back-btn {
+    color: inherit;
+  }
+}

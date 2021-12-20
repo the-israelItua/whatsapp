@@ -1,0 +1,37 @@
+.change-theme {
+  width: 25vw;
+  padding: 1rem 1rem 0;
+  color: #d4d5d7;
+  h3 {
+    font-size: 20px;
+  }
+  &__list {
+    margin: 1.8rem 0 3rem;
+    li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+      input {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+
+  &__btns {
+    display: flex;
+    justify-content: flex-end;
+
+    &__cancel {
+      border: 1px solid #242d31;
+      padding: 12px 24px;
+      border-radius: 4px;
+      color: #00af9b;
+    }
+    &__ok {
+      background-color: #00af9b;
+      border-radius: 4px;
+      padding: 12px 24px;
+      margin-left: 4px;
+    }
+  }
+}

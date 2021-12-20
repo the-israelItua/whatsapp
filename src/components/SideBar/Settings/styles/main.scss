@@ -1,0 +1,51 @@
+@import "./dark-theme.scss";
+
+.settings {
+  padding: 1rem 0;
+  &__header {
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    img {
+      width: 80px;
+      height: 80px;
+      border-radius: 40px;
+    }
+    &__status {
+      margin-left: 24px;
+    }
+    h5 {
+      color: #000000;
+      font-size: 21px;
+      margin-bottom: 8px;
+    }
+    p {
+      color: #666666;
+      font-size: 15px;
+    }
+  }
+
+  ul {
+    color: #919191;
+    margin-top: 2.4rem;
+    margin-left: 1rem;
+    li {
+      display: flex;
+      align-items: center;
+      padding-left: 1rem;
+      &:hover {
+        background-color: #ededed;
+      }
+      p {
+        color: #000000;
+        margin-left: 2.1rem;
+        padding: 1.2rem;
+        border-top: 1px solid #f2f2f2;
+        flex: 1;
+      }
+    }
+    .no-border {
+      border-top: none !important;
+    }
+  }
+}

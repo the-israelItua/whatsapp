@@ -1,0 +1,22 @@
+.dark-theme {
+  .profileDetail {
+    background: unset;
+    box-shadow: 0 0 10px 0 #12191d;
+    &__item {
+      p {
+        color: #d4d5d7;
+      }
+    }
+    &__editing {
+      input {
+        color: #d4d5d7;
+      }
+
+      &__icons {
+        p {
+          color: #4b5155;
+        }
+      }
+    }
+  }
+}

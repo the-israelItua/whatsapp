@@ -1,0 +1,22 @@
+.dark-theme {
+  .home {
+    background: rgb(38, 45, 49);
+    border-bottom-color: #056162;
+
+    &__title {
+      color: rgba(241, 241, 242, 0.88);
+    }
+
+    &__text {
+      color: rgb(166, 168, 170);
+    }
+
+    &__text:first-of-type {
+      border-bottom-color: rgba(241, 241, 242, 0.11);
+    }
+
+    &__link {
+      color: rgb(0, 175, 156);
+    }
+  }
+}

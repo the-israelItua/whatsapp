@@ -1,0 +1,201 @@
+@import "./darktheme";
+.sidebar {
+  min-width: 300px;
+  max-width: 30vw;
+  flex: 40%;
+  border-right: 1px solid #dadada;
+  display: flex;
+  flex-direction: column;
+
+  /*  Sidebar Header */
+  &__avatar-wrapper {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+  }
+  &__actions {
+    margin-right: 20px;
+  }
+  &__actions > * {
+    display: inline-block;
+    margin-left: 25px;
+    cursor: pointer;
+  }
+  &__action-icon {
+    color: rgb(145, 145, 145);
+  }
+
+  /* End Sidebar Header */
+
+  /*  Sidebar Alert */
+  &__alert {
+    min-height: 85px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+  }
+  &__alert--warning {
+    background: #fed859;
+  }
+  &__alert--info {
+    background: #9de1fe;
+  }
+  &__alert--danger {
+    background: #f3645b;
+  }
+  &__alert-icon-wrapper {
+    margin-right: 10px;
+  }
+  &__alert-icon {
+    color: white;
+  }
+  &__alert-texts {
+    flex: 1;
+  }
+  &__alert-text:first-of-type {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #343738;
+  }
+  &__alert-text:last-of-type {
+    font-size: 0.85rem;
+    color: #414a4e;
+    line-height: 17px;
+  }
+  &__alert--danger .sidebar__alert-text:first-of-type,
+  &__alert--danger .sidebar__alert-text:last-of-type {
+    color: white;
+  }
+
+  /* End Sidebar Alert */
+
+  /*  Sidebar Search */
+  &__search-wrapper {
+    padding: 7px 10px;
+    height: 50px;
+    background: #f6f6f6;
+    position: relative;
+  }
+
+  /* End Sidebar Search */
+
+  /*  Sidebar Contact List */
+  &__contacts {
+    flex: 1;
+    overflow-y: scroll;
+    background: #f5f5f5;
+    border-top: 1px solid #dadada;
+  }
+  &-contact {
+    height: 72px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ebebeb;
+    cursor: pointer;
+  }
+  &-contact:hover {
+    background-color: #ebebeb;
+  }
+  &-contact__avatar-wrapper {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  &-contact__content {
+    overflow: hidden;
+    flex: 1;
+  }
+  &-contact__top-content,
+  &-contact__bottom-content,
+  &-contact__message-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &-contact__name,
+  &-contact__message {
+    flex: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  &-contact__top-content {
+    margin-bottom: 2px;
+  }
+  &-contact__name {
+    color: #000000;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  &-contact__time {
+    font-size: 0.7rem;
+    color: rgba(0, 0, 0, 0.45);
+  }
+  &-contact__message-wrapper {
+    color: #00000099;
+    font-size: 0.85rem;
+    margin-right: 3px;
+    overflow: hidden;
+  }
+  &-contact__message-icon {
+    color: #b3b3b3;
+    margin-right: 3px;
+  }
+  &-contact__message-icon--blue {
+    color: #0da9e5;
+  }
+  &-contact__message--unread {
+    color: #000000;
+    font-weight: 500;
+  }
+  &-contact__icons,
+  &-contact:not(:focus) .sidebar-contact__icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(24px);
+    transition: transform 0.5s ease;
+  }
+  &-contact:hover .sidebar-contact__icons {
+    transform: translateX(0);
+  }
+  &-contact__icons > * {
+    margin-left: 8px;
+    color: #b3b3b3;
+  }
+  &-contact__unread {
+    display: inline-block;
+    color: white;
+    background-color: rgb(6, 215, 85);
+    border-radius: 18px;
+    min-width: 18px;
+    height: 18px;
+    padding: 0 3px;
+    line-height: 18px;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+
+  /*  End Sidebar Contact List */
+
+  @media screen and (min-width: 1000px) and (max-width: 1300px) {
+    .sidebar {
+      flex: 35%;
+    }
+    .sidebar ~ div {
+      flex: 65%;
+    }
+  }
+
+  @media screen and (min-width: 1301px) {
+    .sidebar {
+      flex: 30%;
+    }
+    .sidebar ~ div {
+      flex: 70%;
+    }
+  }
+}

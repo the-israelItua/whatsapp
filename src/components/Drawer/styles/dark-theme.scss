@@ -1,0 +1,9 @@
+.dark-theme {
+  .drawer {
+    background: rgb(50, 55, 57);
+
+    &__body {
+      background: rgb(19, 28, 32);
+    }
+  }
+}

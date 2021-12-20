@@ -1,0 +1,24 @@
+.dark-theme {
+  .settings {
+    &__header {
+      h5 {
+        color: #e0e0e2;
+      }
+      p {
+        color: #9fa2a5;
+      }
+    }
+    ul {
+      color: #828689;
+      li {
+        &:hover {
+          background-color: #323739;
+        }
+        p {
+          color: #e0e0e2;
+          border-top: 1px solid #31383c;
+        }
+      }
+    }
+  }
+}
